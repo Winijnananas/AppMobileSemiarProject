@@ -10,7 +10,19 @@ const ButtomTab = () => {
     return (
 
             <Tab.Navigator
-            screenOptions={{ headerShown: false, tabBarActiveTintColor: '#FFFF', tabBarInactiveTintColor: '#8C1E14', tabBarStyle: { backgroundColor: '#F25C05', borderBottomColor: 'black',padding:10 } }}>
+            screenOptions={{ headerShown: false, 
+                
+            tabBarActiveTintColor: '#FFFF',
+             tabBarInactiveTintColor: '#8C1E14',
+              tabBarStyle: { backgroundColor: '#F25C05',
+              position:'absolute',
+              bottom:10,
+              left:10,
+              right:10,
+              elevation:0,
+              height:60,
+              borderRadius:15,
+               borderBottomColor: 'black',padding:10 } }}>
             <Tab.Screen
                 
                 name="หน้าหลัก"
@@ -19,7 +31,7 @@ const ButtomTab = () => {
                     tabBarShowLabel: true,
                     tabBarIcon: ({ color, size }) => (
                         //<MaterialCommunityIcons name="home" color={color} size={size} />
-                        <MaterialCommunityIcons name="home-variant" color={color} size={size} />
+                        <MaterialCommunityIcons name="home-variant" color={color} size={40} />
                     ),
                 }}
             /> 
@@ -31,7 +43,7 @@ const ButtomTab = () => {
                     tabBarIcon: ({ color, size }) => (
                         // <Icon solid name="id-card" color={color} size={size} />
                         //<MaterialCommunityIcons name="account" color={color} size={size} />
-                        <MaterialCommunityIcons name="graph" color={color} size={size} />
+                        <MaterialCommunityIcons name="chart-bar" color={color} size={40} />
                         
                     ),
                 }}
@@ -45,7 +57,7 @@ const ButtomTab = () => {
                     tabBarIcon: ({ color, size }) => (
                         // <Icon solid name="id-card" color={color} size={size} />
                         //<MaterialCommunityIcons name="account" color={color} size={size} />
-                        <MaterialCommunityIcons name="account" color={color} size={size} />
+                        <MaterialCommunityIcons name="account" color={color} size={40} />
                         
                     ),
                 }}
