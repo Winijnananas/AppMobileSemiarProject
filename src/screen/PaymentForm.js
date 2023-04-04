@@ -3,7 +3,8 @@ import { View, TextInput, Button ,StyleSheet,Text,TouchableOpacity,FlatList} fro
 import axios from 'axios';
 import { useFocusEffect } from '@react-navigation/native';
 const PaymentForm = ({ route,onSubmit }) => {
-    const API_Invest = 'http://172.20.10.5:3000/investments';
+  const API_Invest = 'http://192.168.1.31:3000/investments';
+    // const API_Invest = 'http://172.20.10.5:3000/investments';
     const [spendthing, setSpendthing] = useState('');
     const [costvalue, setCostvalue] = useState('');
     const [payments, setPayments] = useState([]); // Add state for payments

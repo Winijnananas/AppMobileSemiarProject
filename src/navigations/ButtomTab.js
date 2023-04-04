@@ -43,7 +43,7 @@ const ButtomTab = () => {
                     tabBarIcon: ({ color, size }) => (
                         // <Icon solid name="id-card" color={color} size={size} />
                         //<MaterialCommunityIcons name="account" color={color} size={size} />
-                        <MaterialCommunityIcons name="chart-bar" color={color} size={40} />
+                        <MaterialCommunityIcons name="chart-bell-curve-cumulative" color={color} size={40} />
                         
                     ),
                 }}

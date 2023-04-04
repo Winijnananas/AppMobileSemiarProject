@@ -33,6 +33,7 @@ const logout = async () => {
     await AsyncStorage.removeItem('@Token');
     // navigate to login screen or any other screen after logout
     clearInputs();
+    alert('ออกจากระบบเเล้ว :)')
     console.log('LOGOUT SUCCESS')
     navigation.navigate('Login')
   } catch (err) {
@@ -95,9 +96,9 @@ const logout = async () => {
   return (
     <View style={{justifyContent:'center',
     flex:1,alignItems:'center',
-    paddingTop:50}}>
-       <Text style={{fontSize:40,fontWeight:'bold'
-       ,marginBottom:20,
+    paddingTop:10}}>
+       <Text style={{fontSize:25,fontWeight:'bold'
+       ,marginBottom:50,
        color:'#D93D04'}}>หน้าผู้ใช้งาน</Text>
        <View style={{marginBottom:100}}>
        <Image source={{ uri: user.urluser }} style={styles.avatar}/>
@@ -154,11 +155,11 @@ const logout = async () => {
     
 
 
-      <TouchableOpacity style={{backgroundColor:'red',
+      <TouchableOpacity style={{backgroundColor:'#C31807',
       ustifyContent:'center',
       height:50,width:'95%',
       borderRadius:7,
-      marginTop:80}}
+      marginTop:170}}
        onPress={() => logout()}
       >
         <Text style={{alignSelf:'center'
